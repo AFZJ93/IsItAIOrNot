@@ -21,7 +21,7 @@ app.add_middleware(
 
 
 # Specify the absolute path for the model directory
-output_dir = "Static/HumanAIModel"  # Change this to the actual path
+output_dir = "./"
 tokenizer = BertTokenizer.from_pretrained(output_dir)
 model = BertForSequenceClassification.from_pretrained(output_dir)
 
